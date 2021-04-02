@@ -85,7 +85,7 @@ public class indexer {
 					continue;
 				} else if (word.get(key)[i] != 0) {
 					// i문서에 그 단어가 있는 경우 리스트에 문서번호, 가중치 저장
-					list.add(i + 1);	//문서 번호 저장
+					list.add(i);	//문서 번호 저장
 					float temp = (float)(DocNum) / word.get(key)[DocNum];
 					float w = (float) (word.get(key)[i] * Math.log(temp));
 					//가중치 소수점 3째자리에서 반올림

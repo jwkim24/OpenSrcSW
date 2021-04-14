@@ -5,7 +5,7 @@ public class kuir {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 
-		if(args!=null) {
+		if(args.length>0) {
 			if (args[0].equals("-c")) {
 				MakeCollection mc = new MakeCollection(args[1]);
 			} else if (args[0].equals("-k")) {
